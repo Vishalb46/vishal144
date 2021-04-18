@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="v.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+
+<nav class="n-bar n-black">
+  <a href="Login.html" class="n-button n-bar-item">Login</a>
+  <a href="#Packages" class="n-button n-bar-item">Packages</a>
+  <a href="#tour" class="n-button n-bar-item">Tour</a>
+  <a href="#offer" class="n-button n-bar-item">Offers</a>
+  <a href="#contact" class="n-button n-bar-item">Contact</a>
+</nav>
+<section>
+  <img class="mySlides" src="landing1442.jpg"
+  style="width:100%">
+  <img class="mySlides" src="landing1443.jpg"
+  style="width:100%">
+  <img class="mySlides" src="landing1443.jpg"
+  style="width:100%">
+</section>
+
+
+
+
+<footer class="a-container a-padding-64 a-center a-black a-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="a-medium">
+  </p>
+</footer>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
